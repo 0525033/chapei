@@ -1,10 +1,10 @@
 if($(window).width()<768){
-    $.get('Header_MO.html',function(data){
+    $.get('Header_MO.txt',function(data){
         $('#Header').html(data)
         $('Footer').removeClass('bg-dark')
         $('Footer').addClass('text-secondary')
     })}else{
-    $.get('Header_DE.html',function(data){
+    $.get('Header_DE.txt',function(data){
         Header=data
         $('#Header').html(Header)
         $('Footer').addClass('text-secondary')
