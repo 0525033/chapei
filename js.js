@@ -1,26 +1,14 @@
-$.get('Header_MO.txt',function(data){
-    Header_MO=data
-    Header=$('#Header').html()
-    $(function(){
-        if($(window).width()<732){
-            console.log($(window).width());
-            $('#Header').html(Header_MO)
-            $('Footer').removeClass('bg-dark')
-            $('Footer').addClass('text-secondary')
-    
-        }else{
-            $('Header').html(Header)
-    
-        };
-    
-    
-    })
+if($(window).width()<768){
+    $.get('Header_MO.txt',function(data){
+        $('#Header').html(data)
+        $('Footer').removeClass('bg-dark')
+        $('Footer').addClass('text-secondary')
+    })}else{
+    $.get('Header_DE.html',function(data){
+        Header=data
+        $('#Header').html(Header)
+        $('Footer').addClass('text-secondary')
 })
 $("#filter_btn").click(function(){
     $('#filter').toggleClass("filter_tgl");
-})
-console.log(location.href)
-
-
-
-
+})}

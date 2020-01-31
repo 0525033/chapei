@@ -5,6 +5,8 @@
     <title>佳焙烘焙坊 | 麵包系列</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js.js"></script>
     <!-- Bootstrap.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Bootstrap.css -->
@@ -15,33 +17,6 @@
 <!-- Your Code Here -->
     <!-- Navigationbar -->
     <header id="Header">
-        <div class="row bg-dark text-white py-4 align-items-center">
-            <div class="col-4 text-center"><span>(07)1234567</span></div>
-            <div class="col-4 text-center"><a href="index.html" class="nav-link"><h1>佳焙</h1></a></div>
-            <div class="col-4 text-center">
-                <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item dropdown">
-                        <a type="button"  id="dropdownMenu1" class="dropdown dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">選擇語言</a>
-                        <div class="dropdown-menu" id="Lang">
-                            <a href="#" class="dropdown-item active" aria-labelledby="dropdownMenu1">繁體中文</a>
-                            <a href="#" class="dropdown-item">English</a>
-                        </div>
-                    </li>
-                    <li class="list-inline-item"><a type="button" class="text-white" href="#">購物車</a></li>
-                    <li class="list-inline-item"><a type="button" class="text-white" href="#">願望清單</a></li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="container-fluid bg-dark text-white">
-            <ul class="nav nav-fill">
-                <li class="text-center nav-item"><a href="index.html" class="nav-link">首頁</a></li>
-                <li class="text-center nav-item"><a href="about.html" class="nav-link">關於我們</a></li>
-                <li class="text-center nav-item"><a href="#" class="nav-link">餅乾系列</a></li>
-                <li class="text-center nav-item"><a href="Products.html" class="nav-link active">麵包系列</a></li>
-                <li class="text-center nav-item"><a href="#" class="nav-link">蛋糕系列</a></li>
-            </ul>
-        </div>
     </header>
     <div id="Products_bn"></div>
     <div class="row" id="Products_container">
@@ -375,6 +350,7 @@
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js.js"></script>
+<script>$(document).ready(function(){$("#Breads").addClass("active")})</script>
 <!-- jquery -->
 <!-- Bootstrap.js -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
