@@ -18,3 +18,6 @@ if($(window).width()<768){
     $("#Item_content .container").addClass("px-0");
     $("#Item_content .container").removeClass("container");
 }
+if($("input[name='quant']").val()<0){
+    console.log('quant_err');
+}

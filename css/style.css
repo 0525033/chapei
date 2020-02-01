@@ -199,6 +199,8 @@ footer .social_media_icons {
   background-size: contain; }
 
 @media screen and (max-width: 992px) {
+  .display-md-none {
+    display: none; }
   .P_item {
     position: static; }
     .P_item .P_grid {
@@ -232,6 +234,8 @@ footer .social_media_icons {
         grid-column-start: 2; } }
 
 @media screen and (max-width: 768px) {
+  .display-none {
+    display: none; }
   footer hr {
     display: none; }
   footer > div:nth-child(1) {
