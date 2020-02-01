@@ -157,33 +157,46 @@ footer .social_media_icons {
     transition: opacity 0.2s linear; }
     .P_item .P_grid .P_title {
       grid-column-start: 2;
-      grid-row-start: 2; }
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
     .P_item .P_grid .P_price {
-      background-color: #0F0;
       text-align: center;
       font-weight: 700;
       padding-bottom: 0.25rem;
       grid-column-start: 3;
-      grid-row-start: 4; }
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5; }
     .P_item .P_grid .cart_add {
-      background-color: #F00;
       width: 70%;
       height: 70%;
       align-self: center;
       justify-self: right;
       grid-column-start: 4;
-      grid-row-start: 2; }
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3; }
     .P_item .P_grid .love_icon {
       width: 70%;
       height: 70%;
       align-self: center;
       justify-self: right;
       grid-column-start: 4;
-      grid-row-start: 3; }
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4; }
     .P_item .P_grid:hover {
       opacity: 1; }
     .P_item .P_grid button {
       display: none; }
+
+#Item_pic {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 @media screen and (max-width: 992px) {
   .P_item {
@@ -257,4 +270,10 @@ footer .social_media_icons {
     height: 0px;
     transition: height 0.3s linear; }
   #Products_container .filter_tgl {
-    height: 206px; } }
+    height: 206px; }
+  #Item_pic {
+    width: 100%;
+    height: 75vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }

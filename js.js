@@ -12,3 +12,9 @@ if($(window).width()<768){
 $("#filter_btn").click(function(){
     $('#filter').toggleClass("filter_tgl");
 })}
+
+if($(window).width()<768){
+    $("#Item_content .container").addClass("container-fluid");
+    $("#Item_content .container").addClass("px-0");
+    $("#Item_content .container").removeClass("container");
+}

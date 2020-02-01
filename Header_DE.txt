@@ -2,7 +2,7 @@
         <div class="col-0 col-sm-4 text-center"><span>(07)1234567</span></div>
         <div class="col-6 col-sm-4 text-center"><a href="#" class="nav-link"><h1>佳焙</h1></a></div>
         <div class="col-6 col-sm-4 text-center">
-            <ul class="list-unstyled list-inline">
+            <ul class="list-unstyled list-inline d-flex flex-nowrap">
                 <li class="list-inline-item dropdown">
                     <a type="button"  id="dropdownMenu1" class="dropdown dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">選擇語言</a>
                     <div class="dropdown-menu" id="Lang">
