@@ -38,18 +38,18 @@ ul {
       background-repeat: no-repeat;
       background-position: center; }
     #card_deck .card #img_1 {
-      background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/cookies-cate.jpg); }
+      background-image: url(../images/cookies-cate.jpg); }
     #card_deck .card #img_2 {
-      background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/bread-cate.jpg); }
+      background-image: url(../images/bread-cate.jpg); }
     #card_deck .card #img_3 {
-      background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/cake-cate.jpg); }
+      background-image: url(../images/cake-cate.jpg); }
 
 #Promo {
   display: grid;
   grid-template-rows: 40vw 10vw;
   grid-template-columns: 10vw 1fr 10vw;
   height: 50vw;
-  background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/Promo.jpg);
+  background-image: url(../images/Promo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -84,7 +84,7 @@ footer .social_media_icons {
 #about_bg {
   width: 100%;
   height: 85vh;
-  background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/about_bg.jpg);
+  background-image: url(../images/about_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -92,7 +92,7 @@ footer .social_media_icons {
 #Products_bn {
   width: 100%;
   height: 50vw;
-  background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/Products_bn.jpg);
+  background-image: url(../images/Products_bn.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top; }
@@ -125,14 +125,14 @@ footer .social_media_icons {
     #filter > div:nth-child(2) .ckbox_container:hover input ~ .checkmark {
       background-color: #eee; }
     #filter > div:nth-child(2) .ckbox_container input:checked ~ .checkmark {
-      background-image: url(http://yucportifolio.offyoucode.co.uk/chapei/images/check.png); }
+      background-image: url(../images/check.png); }
   #filter > div:nth-child(2) .checkmark {
     position: absolute;
     left: 0;
     width: 1.25rem;
     height: 1.25rem;
     border: grey solid 1px;
-    background-image: url(images/uncheck.png);
+    background-image: url(../images/uncheck.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
