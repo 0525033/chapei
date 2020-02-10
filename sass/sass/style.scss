@@ -1,0 +1,352 @@
+*{
+    font-family: 'Noto Serif TC', serif;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+// Bootstrap內容設定
+.nav-link{
+    color: wheat;
+    transition: color 0.2s linear;
+    &:hover{
+        color: darken($color: wheat, $amount: 20)
+    }
+}
+.active{
+    color: lighten($color: wheat, $amount: 30) !important;
+}
+ul{
+    margin-bottom: 0rem;
+}
+
+.Banner{
+    width: 100%;
+    height: 30vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  #card_deck{
+      .card{
+          border-radius: 0.5rem;
+          .img_container{
+              width: 100%;
+              height: 0;
+              padding-bottom: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+          }
+          #img_1{
+            background-image: url(../images/cookies-cate.jpg);
+          }
+          #img_2{
+              background-image: url(../images/bread-cate.jpg);
+          }
+          #img_3{
+              background-image: url(../images/cake-cate.jpg);
+          }
+      }
+      width: 90%;
+      margin: 10px auto;
+      text-align: center;
+  }
+  #Promo{
+      display: grid;
+      grid-template-rows: 40vw 10vw;
+      grid-template-columns:10vw 1fr 10vw;
+      height: 50vw;
+      background-image: url(../images/Promo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      .vlr{
+          writing-mode: vertical-lr;
+      }
+      #title{
+          grid-column-start: 3;
+          margin-top: 5rem;
+      }
+      #subtitle{
+          grid-row-start: 1;
+          grid-column-start: 2;
+          text-align: center;
+          margin: auto 0px auto auto;
+      }
+      button{
+          grid-column-start: 2;
+          grid-row-start: 2;
+          padding: 10px 20px;
+          border: solid 2px #000;
+          background-color: rgba($color: #000, $alpha: 0);
+          margin: auto auto;
+          transition: background-color 0.3s linear,color 0.3s linear;
+          span{
+              letter-spacing: 10px;
+          }
+          &:hover{
+              color:white;
+              background-color: rgba($color: #000000, $alpha: 0.9);
+          }
+      }
+    }
+footer{
+    .social_media_icons{
+        height: 1rem;
+        fill: #000;
+    }
+}
+#about_bg{
+    width: 100%;
+    height: 85vh;
+    background-image: url(../images/about_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Products_bn{
+    width: 100%;
+    height: 50vw;
+    background-image: url(../images/Products_bn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+#filter_btn{
+    display: none;
+}
+#filter{
+    >div{
+        min-width: 190px;
+        &:first-child{
+            background-color: #E6E6E6;
+        }
+        &:nth-child(2){
+            .ckbox_container{
+                display: block;
+                position: relative;
+                cursor: pointer;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -webkit-user-select: none;
+                label{
+                    margin-bottom: 0;
+                }
+                input{
+                    position: absolute;
+                    left: 0;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+                &:hover input ~ .checkmark{
+                    background-color: #eee;
+                }
+                & input:checked ~ .checkmark{
+                    background-image: url(../images/check.png);
+
+                }
+            }
+            .checkmark{
+                position: absolute;
+                left: 0;
+                width: 1.25rem;
+                height:1.25rem;
+                border: grey solid 1px;
+                background-image: url(../images/uncheck.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transition:background-image 0.1s linear;
+            }
+        }
+
+    }
+}
+.P_item{
+    position: relative;
+    .P_grid{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        margin-left: 0;
+        background-color: rgba($color: #FFF, $alpha: 0.4);
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 29px 1fr 1fr 1fr 35px;
+        grid-template-rows:1px 1fr 1fr 1.5rem 48px;
+        grid-row-gap: 5px;
+        opacity: 0;
+        transition:opacity 0.2s linear;
+        .P_title{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .P_price{
+            text-align: center;
+            font-weight: 700;
+            padding-bottom: 0.25rem;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .cart_add{
+            width: 70%;
+            height: 70%;
+            align-self: center;
+            justify-self: right;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .love_icon{
+            width: 70%;
+            height: 70%;
+            align-self: center;
+            justify-self: right;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        button{
+            display: none;
+        }
+    }
+}
+#Item_pic{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and(max-width:992px){
+    .display-md-none{
+        display: none;
+    }
+    .P_item{
+        position: static;
+        .P_grid{
+            position: static;
+            margin-left: 1rem;
+            order: 2;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            opacity: 1;
+            svg{
+                display: none;
+            }
+            .P_title{
+                font-size: 2rem;
+                grid-row-start: 1;
+                grid-column-start: 1;
+            }
+            .P_price{
+                grid-row-start: 2;
+                grid-column-start: 1;
+                text-align: unset;
+            }
+            button{
+                background-color:#DDD;
+                border: none;
+            }
+            button:nth-child(5){
+                display: unset;
+                grid-row-start: 3;
+                grid-column-start: 1;
+            }
+            button:last-child{
+                display: unset;
+                grid-row-start: 3;
+                grid-column-start: 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+.display-none{
+    display: none;
+}
+footer{
+    hr{
+        display: none;
+    }
+    >div:nth-child(1){
+        display: none;
+    }
+    >div:nth-child(3){
+        display: none;
+    }
+}
+#Promo{
+    grid-template-rows: 10vw 20vw 20vw;
+    grid-template-columns:10vw 1fr 10vw;
+    .vlr{
+        writing-mode: unset;
+    }
+    #title{
+        grid-row-start:1;
+        grid-column-start: 2;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        text-align: right;
+    }
+    #subtitle{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        margin: auto auto auto auto;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        padding: 0.5rem;
+        >h3{
+            color: white;
+            font-size: 1rem;
+            text-align: right;
+            margin-bottom: 0px;
+        }
+    }
+    button{
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+}
+#Products_container{
+    #filter_btn{
+        display: block;
+    }
+    .filter_off{
+        overflow: hidden;
+        height: 0px;
+        transition: height 0.3s linear;
+    }
+    .filter_tgl{
+        height: 206px;
+    }
+}
+#Item_pic{
+    width: 100%;
+    height: 75vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+}
