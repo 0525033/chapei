@@ -1,15 +1,15 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "comp": "node-sass sass/style.scss ../css/style.css",
-    "comp-mo":"node-sass sass/style_mo.scss ../css/style_mo.css"
+    "comp-mo": "node-sass sass/style_mo.scss ../css/style_mo.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.13.0"
-  }
+    "node-sass": "^4.13.1"
+  },
+  "description": ""
 }
