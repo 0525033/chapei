@@ -236,7 +236,20 @@ footer{
     background-size: contain;
 }
 #Cart_content{
-    
+    width: 80vw;
+    margin: 100px auto;
+    #items{
+        .item{
+            img{
+                height: 200px;
+            }
+            height: fit-content;
+            #price{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }
 
 @media screen and(max-width:992px){
@@ -351,5 +364,20 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#Cart_content{
+    width: 80vw;
+    margin: 100px auto;
+    #items{
+        .item{
+            img{
+                height: 150px;
+            }
+            height: fit-content;
+            #price{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
 }
