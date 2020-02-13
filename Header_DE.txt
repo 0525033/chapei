@@ -10,7 +10,7 @@
                         <a href="#" class="dropdown-item">English</a>
                     </div>
                 </li>
-                <li class="list-inline-item"><a type="button" class="text-white" href="#">購物車</a></li>
+                <li class="list-inline-item"><a type="button" class="text-white" href="Cart.html">購物車</a></li>
                 <li class="list-inline-item"><a type="button" class="text-white" href="#">願望清單</a></li>
             </ul>
         </div>
