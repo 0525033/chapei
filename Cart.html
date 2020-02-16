@@ -18,14 +18,14 @@
     </header>
     <div id="Cart_content" class="row py-5">
         <div id="items" class="col-12 col-md-8">
-            <div class="item">
-                <img src="images/P1.jpg" alt="">
+            <div class="item py-2" v-for="item in items">
+                <img v-bind:src="item[3]" alt="">
                 <div class="item_info pl-1 pl-md-3">
-                    <h3>項目一</h3>
+                    <h3>{{item[1]}}</h3>
                     <h6>類別：麵包</h6>
                     <h6>移除</h6>
                 </div>
-                <h3>NT$45</h3>
+                <h3>NT${{item[2]}}</h3>
             </div>
         </div>
         <div class="col-12 col-md-4 pr-2 display-none">
@@ -50,7 +50,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <Footer id="Footer" class="bg-dark text-white">
     </Footer>
@@ -59,6 +58,7 @@
 
 <!-- Your Code Here -->
 <!-- Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <!-- Vue.js -->
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
