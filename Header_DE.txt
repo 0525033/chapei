@@ -4,14 +4,14 @@
         <div class="col-6 col-sm-4 text-center">
             <ul class="list-unstyled list-inline d-flex flex-nowrap">
                 <li class="list-inline-item dropdown">
-                    <a  id="dropdownMenu1" class="dropdown dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">選擇語言</a>
+                    <a type="button"  id="dropdownMenu1" class="dropdown dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">選擇語言</a>
                     <div class="dropdown-menu" id="Lang">
                         <a href="#" class="dropdown-item active" aria-labelledby="dropdownMenu1">繁體中文</a>
                         <a href="#" class="dropdown-item">English</a>
                     </div>
                 </li>
-                <li class="list-inline-item"><a class="text-white" href="Cart.html">購物車</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#">願望清單</a></li>
+                <li class="list-inline-item"><a type="button" class="text-white" href="Cart.html">購物車</a></li>
+                <li class="list-inline-item"><a type="button" class="text-white" href="#">願望清單</a></li>
             </ul>
         </div>
 
