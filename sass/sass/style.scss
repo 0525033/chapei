@@ -168,20 +168,18 @@ footer{
 
     }
 }
+
 .P_item{
-    position: relative;
+    max-width: 14.98vw;
     .P_grid{
-        position: absolute;
-        width: 100%;
-        height:100%;
-        margin-left: 0;
+        width: 14.98vw;
+        height: 11vw;
+        overflow: hidden;
         background-color: rgba($color: #FFF, $alpha: 0.4);
-        top: 0;
-        left: 0;
         z-index: 1;
         display: grid;
-        grid-template-columns: 29px 1fr 1fr 1fr 35px;
-        grid-template-rows:1px 1fr 1fr 1.5rem 48px;
+        grid-template-columns: 15px 1fr 1fr 1fr 15px;
+        grid-template-rows:1px 4vw 4vw 3vw 2px;
         grid-row-gap: 5px;
         opacity: 0;
         transition:opacity 0.2s linear;
@@ -272,9 +270,8 @@ footer{
         display: none;
     }
     .P_item{
-        position: static;
+        max-width: 100vw;
         .P_grid{
-            position: static;
             margin-left: 1rem;
             order: 2;
             grid-template-columns: 1fr 1fr;
