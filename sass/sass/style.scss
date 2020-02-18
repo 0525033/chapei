@@ -221,9 +221,9 @@ footer{
         &:hover{
             opacity: 1;
         }
-        button{
-            display: none;
-        }
+    }
+    button{
+        display: none;
     }
 }
 #Item_pic{
@@ -291,20 +291,20 @@ footer{
                 grid-column-start: 1;
                 text-align: unset;
             }
-            button{
-                background-color:#DDD;
-                border: none;
-            }
-            button:nth-child(5){
-                display: unset;
-                grid-row-start: 3;
-                grid-column-start: 1;
-            }
-            button:last-child{
-                display: unset;
-                grid-row-start: 3;
-                grid-column-start: 2;
-            }
+        }
+        button{
+            background-color:#DDD;
+            border: none;
+        }
+        button:nth-child(5){
+            display: unset;
+            grid-row-start: 3;
+            grid-column-start: 1;
+        }
+        button:last-child{
+            display: unset;
+            grid-row-start: 3;
+            grid-column-start: 2;
         }
     }
 }

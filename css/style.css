@@ -185,8 +185,8 @@ footer .social_media_icons {
       grid-row-end: 4; }
     .P_item .P_grid:hover {
       opacity: 1; }
-    .P_item .P_grid button {
-      display: none; }
+  .P_item button {
+    display: none; }
 
 #Item_pic {
   width: 100%;
@@ -239,17 +239,17 @@ footer .social_media_icons {
         grid-row-start: 2;
         grid-column-start: 1;
         text-align: unset; }
-      .P_item .P_grid button {
-        background-color: #DDD;
-        border: none; }
-      .P_item .P_grid button:nth-child(5) {
-        display: unset;
-        grid-row-start: 3;
-        grid-column-start: 1; }
-      .P_item .P_grid button:last-child {
-        display: unset;
-        grid-row-start: 3;
-        grid-column-start: 2; } }
+    .P_item button {
+      background-color: #DDD;
+      border: none; }
+    .P_item button:nth-child(5) {
+      display: unset;
+      grid-row-start: 3;
+      grid-column-start: 1; }
+    .P_item button:last-child {
+      display: unset;
+      grid-row-start: 3;
+      grid-column-start: 2; } }
 
 @media screen and (max-width: 768px) {
   .display-none {
