@@ -37,8 +37,8 @@
             </div>
         </div>
         <div id="items" class="col-md-9 row my-md-5 px-0" style="box-sizing: border-box;">
-                <div v-for="item in items" v-bind:style="{backgroundimage:item[3]}" class="col-12 col-md-12 col-lg-3 px-0 mx-4 mb-5 P_item row">
-                    <div style="background-image: url(images/P1.jpg);background-size: contain;">
+                <div v-for="item in items" class="col-12 col-md-12 col-lg-3 px-0 mx-lg-4 mb-5 P_item row">
+                    <div v-bind:style="{backgroundImage:'url('+item[3]+')'}" style="background-size: contain;background-repeat: no-repeat;">
                         <div class="P_grid col-lg-12 px-0">
                             <span class="P_title">{{item[1]}}</span>
                             <span class="P_price">NT${{item[2]}}</span>
@@ -47,8 +47,13 @@
                             
                         </div>
                     </div>
-                    <button>加入購物車</button>
-                    <button>加入願望清單</button>
+                    <div class="P_M_grid">
+                        <span class="P_title">{{item[1]}}</span>
+                        <span class="P_price">NT${{item[2]}}</span>
+                        <button>加入購物車</button>
+                        <button>加入願望清單</button>
+                    </div>
+                    
                     <!-- <div class="P_imgcontainer col-5 col-lg-12 px-0"> -->
                     <!-- <img v-bind:src="item[3]" alt="#" style="width: 100%;"> -->
                     <!-- </div> -->

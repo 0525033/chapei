@@ -25,7 +25,7 @@ if($(window).width()<768){
 if($("input[name='quant']").val()<0){
     console.log('quant_err');
 }
-products = [["P000001","麵包1",45,"images/P1.jpg"],
+products = [["P000001","麵包1",45,'images/P1.jpg'],
 ["P000002","麵包2",45,"images/P2.jpg"],
 ["P000003","麵包3",45,"images/P3.jpg"],
 ["P000004","麵包4",45,"images/P4.jpg"],
