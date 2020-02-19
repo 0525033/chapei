@@ -70,7 +70,8 @@ ul {
     border: solid 2px #000;
     background-color: rgba(0, 0, 0, 0);
     margin: auto auto;
-    transition: background-color 0.3s linear,color 0.3s linear; }
+    transition: background-color 0.3s linear,color 0.3s linear;
+    font-size: 2rem; }
     #Promo button span {
       letter-spacing: 10px; }
     #Promo button:hover {
