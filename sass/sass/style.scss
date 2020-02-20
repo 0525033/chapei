@@ -199,11 +199,13 @@ footer{
         grid-row-gap: 5px;
         opacity: 0;
         transition:opacity 0.2s linear;
+        cursor: pointer;
         .P_title{
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3;
+            font-size: 1.5rem;
         }
         .P_price{
             text-align: center;
@@ -223,6 +225,16 @@ footer{
             grid-column-end: 5;
             grid-row-start: 2;
             grid-row-end: 3;
+            .cls-1{
+                fill: #DDDDDD;
+                transition: fill 0.2s linear;
+            }
+            &:hover .cls-1{
+                fill: #D0104C;
+            }
+            &:hover .cls-2{
+                fill: #FFFFFF;
+            }
         }
         .love_icon{
             width: 70%;
@@ -233,6 +245,16 @@ footer{
             grid-column-end: 5;
             grid-row-start: 3;
             grid-row-end: 4;
+            .cls-1{
+                fill: #DDDDDD;
+                transition: fill 0.2s linear;
+            }
+            &:hover .cls-1{
+                fill: #D0104C;
+            }
+            &:hover .cls-2{
+                fill: #FFFFFF;
+            }
         }
         &:hover{
             opacity: 1;
@@ -298,10 +320,14 @@ footer{
                 grid-row-start: 2;
                 grid-row-end: 3;
                 .cls-1{
+                    fill: #DDDDDD;
                     transition: fill 0.2s linear;
                 }
                 &:hover .cls-1{
                     fill: #D0104C;
+                }
+                &:hover .cls-2{
+                    fill: #FFFFFF;
                 }
             }
             .love_icon{
@@ -314,10 +340,14 @@ footer{
                 grid-row-start: 3;
                 grid-row-end: 4;
                 .cls-1{
+                    fill: #DDDDDD;
                     transition: fill 0.2s linear;
                 }
                 &:hover .cls-1{
                         fill: #D0104C;                    
+                }
+                &:hover .cls-2{
+                    fill: #FFFFFF;
                 }
             }
             &:hover{
@@ -452,17 +482,14 @@ footer{
 }
 #Products_container{
     #filter_btn{
-        display: block;
+        display: unset;
+    }
+    #filter{
+        height: 215px;
     }
     .filter_off{
-        overflow: hidden;
-        height: 0px;
-        transition: height 0.3s linear;
-    }
-    .filter_tgl{
-        height: 206px;
-    }
-    
+        display: none;
+    } 
 }
 #Item_pic{
     width: 100%;

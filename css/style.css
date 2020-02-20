@@ -165,12 +165,14 @@ footer .social_media_icons {
     grid-template-rows: 1px 4vw 4vw 3vw 2px;
     grid-row-gap: 5px;
     opacity: 0;
-    transition: opacity 0.2s linear; }
+    transition: opacity 0.2s linear;
+    cursor: pointer; }
     .P_item .P_grid .P_title {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2;
-      grid-row-end: 3; }
+      grid-row-end: 3;
+      font-size: 1.5rem; }
     .P_item .P_grid .P_price {
       text-align: center;
       font-weight: 700;
@@ -188,6 +190,13 @@ footer .social_media_icons {
       grid-column-end: 5;
       grid-row-start: 2;
       grid-row-end: 3; }
+      .P_item .P_grid .cart_add .cls-1 {
+        fill: #DDDDDD;
+        transition: fill 0.2s linear; }
+      .P_item .P_grid .cart_add:hover .cls-1 {
+        fill: #D0104C; }
+      .P_item .P_grid .cart_add:hover .cls-2 {
+        fill: #FFFFFF; }
     .P_item .P_grid .love_icon {
       width: 70%;
       height: 70%;
@@ -197,6 +206,13 @@ footer .social_media_icons {
       grid-column-end: 5;
       grid-row-start: 3;
       grid-row-end: 4; }
+      .P_item .P_grid .love_icon .cls-1 {
+        fill: #DDDDDD;
+        transition: fill 0.2s linear; }
+      .P_item .P_grid .love_icon:hover .cls-1 {
+        fill: #D0104C; }
+      .P_item .P_grid .love_icon:hover .cls-2 {
+        fill: #FFFFFF; }
     .P_item .P_grid:hover {
       opacity: 1; }
   .P_item .P_M_grid {
@@ -255,9 +271,12 @@ footer .social_media_icons {
       grid-row-start: 2;
       grid-row-end: 3; }
       #Item_content .P_item .P_grid .cart_add .cls-1 {
+        fill: #DDDDDD;
         transition: fill 0.2s linear; }
       #Item_content .P_item .P_grid .cart_add:hover .cls-1 {
         fill: #D0104C; }
+      #Item_content .P_item .P_grid .cart_add:hover .cls-2 {
+        fill: #FFFFFF; }
     #Item_content .P_item .P_grid .love_icon {
       width: 70%;
       height: 70%;
@@ -268,9 +287,12 @@ footer .social_media_icons {
       grid-row-start: 3;
       grid-row-end: 4; }
       #Item_content .P_item .P_grid .love_icon .cls-1 {
+        fill: #DDDDDD;
         transition: fill 0.2s linear; }
       #Item_content .P_item .P_grid .love_icon:hover .cls-1 {
         fill: #D0104C; }
+      #Item_content .P_item .P_grid .love_icon:hover .cls-2 {
+        fill: #FFFFFF; }
     #Item_content .P_item .P_grid:hover {
       opacity: 1; }
 
@@ -365,13 +387,11 @@ footer .social_media_icons {
       grid-row-start: 3;
       grid-column-start: 2; }
   #Products_container #filter_btn {
-    display: block; }
+    display: unset; }
+  #Products_container #filter {
+    height: 215px; }
   #Products_container .filter_off {
-    overflow: hidden;
-    height: 0px;
-    transition: height 0.3s linear; }
-  #Products_container .filter_tgl {
-    height: 206px; }
+    display: none; }
   #Item_pic {
     width: 100%;
     height: 75vw;

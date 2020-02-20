@@ -22,9 +22,8 @@ if($(window).width()<768){
     $("#Item_content .container").addClass("px-0");
     $("#Item_content .container").removeClass("container");
 }
-if($("input[name='quant']").val()<0){
-    console.log('quant_err');
-}
+
+
 products = [["P000001","麵包1",45,'images/P1.jpg'],
 ["P000002","麵包2",45,"images/P2.jpg"],
 ["P000003","麵包3",45,"images/P3.jpg"],
@@ -50,4 +49,9 @@ var vm = new Vue({
     data:{
         items:products
     }
+});
+$(function(){
+    $('#filter_btn').click(function(){
+        $('#filter').toggleClass('filter_off');
+    });
 });
